@@ -8,19 +8,21 @@ def calc_r(x, y):
     return (x**2+y**2)**0.5
 
 def acc_func(x,y):
-    '''For acceleration
+    '''
+    For acceleration
 
-Arguements :
-    x  : float
-        position wrt stationery object in x dir
-    y  : float
-        position wrt stationery object in y dir
+    Arguments :
+        x  : float
+            position wrt stationery object in x dir
+        y  : float
+             position wrt stationery object in y dir
 
-Returns :
-    ax  : function
-        acceleration in x dir
-    ay  : float
-        acceleration in y dir'''
+    Returns :
+        ax  : function
+              acceleration in x dir
+        ay  : float
+              acceleration in y dir
+     '''
 
     rsquare = (x**2  + y**2  )
     r = rsquare ** 0.5
@@ -109,7 +111,8 @@ def calculate_trajectory(M, R, m, v, Time):
     return {'x': X,'y': Y,'t': Ti,'ux': UX,'uy': UY, 'ax': AX, 'ay': AY, 'r': Rad}
 
 def plot(traj, string):
-    """Plots a gravitational trajectory.
+    """
+    Plots a gravitational trajectory.
 
     Arguments :
         traj : (dict) containing trajectory data given by calculate_trajectory()
